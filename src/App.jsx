@@ -1,18 +1,21 @@
 import { useState } from 'react'
 
 function Left(){
-  return <h1 id='left'>a</h1>
+  return 
 }
 
 function Right(){
   return <input id='right' />
 }
+
+const targets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [target, setTarget] = useState(targets[Math.floor(Math.random()*targets.length)])
 
   return (
     <main>
-     <Left />
+     <h1 id='left'>{target}</h1>
      <Right />
     </main>
   )
