@@ -18,8 +18,10 @@ main{
 #right{
   background: blue;
   width:3ch;
-  padding-left: 0.75ch;
+  padding-left: 0.1ch;
   caret-color: transparent;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 #left,#right{
