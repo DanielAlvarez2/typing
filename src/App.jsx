@@ -28,7 +28,7 @@ function App() {
       let newTarget
       do{
         newTarget = targets[Math.floor(Math.random()*targets.length)]
-      }while(newTarget == document.querySelector('#left').value)
+      }while(newTarget == target)
       setTarget(newTarget)
     },1200)
   }
