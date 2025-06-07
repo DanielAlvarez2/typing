@@ -5,9 +5,9 @@ const targets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'
 
 function checkAnswer(){
   if(document.querySelector('#right').value == document.querySelector('#left').textContent) {
-    alert('true')
+    document.querySelector('#right').style.backgroundColor = 'green' 
   }else{
-    alert('false')
+    document.querySelector('#right').style.backgroundColor = 'red' 
   }
 }
 
