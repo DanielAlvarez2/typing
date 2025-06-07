@@ -22,7 +22,11 @@ function App() {
     setTimeout(()=>{
       document.querySelector('#right').value = ''
       document.querySelector('#right').style.backgroundColor = 'blue'
-      setTarget(targets[Math.floor(Math.random()*targets.length)])
+      let newTarget
+      do{
+        newTarget = targets[Math.floor(Math.random()*targets.length)]
+      }while(newTarget == document.querySelector('#left').value)
+      setTarget(newTarget)
     },1000)
   }
   
