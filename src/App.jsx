@@ -4,7 +4,11 @@ import { useState } from 'react'
 const targets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 function checkAnswer(){
-  alert('keyup')
+  if(document.querySelector('#right').value == document.querySelector('#left').textContent) {
+    alert('true')
+  }else{
+    alert('false')
+  }
 }
 
 function App() {

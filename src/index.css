@@ -19,6 +19,7 @@ main{
   background: blue;
   width:3ch;
   padding-left: 0.75ch;
+  caret-color: transparent;
 }
 
 #left,#right{
